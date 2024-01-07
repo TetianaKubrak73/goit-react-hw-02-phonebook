@@ -3,6 +3,9 @@
   flex-direction: column;
   padding: 33px;
   margin: 0 auto;
+  background-color: antiquewhite;
+  height: auto;
+  width: 600px;
 }
 .wrapper {
   flex-wrap: wrap;

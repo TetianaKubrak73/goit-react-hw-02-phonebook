@@ -3,9 +3,9 @@ import style from './ContactList.module.css';
 
 // Компонент списка контактов
 const ContactList = ({ contacts, onRemoveContact }) => (
-  <list>
+  <ul className={style.list}>
     {contacts.map(contact => (
-      <item key={contact.id}>
+      <li key={contact.id}>
         {contact.name + ' : ' + contact.number}
         {
           // Кнопка удаления контакта
@@ -17,9 +17,9 @@ const ContactList = ({ contacts, onRemoveContact }) => (
             delete
           </button>
         }
-      </item>
+      </li>
     ))}
-  </list>
+  </ul>
 );
 
 export default ContactList;
